@@ -7,15 +7,15 @@ Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Based on the excellent work of r-a-y of the BuddyPress community (https://gist.github.com/r-a-y/5736878), adds useful BuddyPress global variables to the admin bar for debug purposes.
+Adds useful BuddyPress global variables and information to the admin bar for debug purposes.
 
 == Description ==
 
-xx
+Based on the excellent work of r-a-y of the BuddyPress community (https://gist.github.com/r-a-y/5736878), adds useful BuddyPress global variables to the admin bar for debug purposes.
 
 Uses:
 
-*   xx
+*   TO BE COMPLETED
 
 == Installation ==
 
@@ -39,7 +39,7 @@ Nope, not designed to be viewed here.
 
 == Screenshots ==
 
-1. xx
+1. TO BE GENERATED AND COMPLETED
 
 == Changelog ==
 
