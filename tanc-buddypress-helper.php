@@ -3,7 +3,7 @@
 Plugin Name: Tanc BuddyPress Helper
 Plugin URI: http://www.tancdesign.com
 Description: WORK IN PROGRESS! Adds useful BuddyPress global variables to the admin bar for debug purposes.
-Version: 0.1
+Version: 0.2
 Author: Jonny Allbut/Tanc Design
 Author URI: http://jonnya.net
 License: GPLv2 or later
@@ -14,7 +14,14 @@ TODO: This is a good start, but needs to be extended to include all BuddyPress v
 */
 
 // Only do stuff if BuddyPress is active thanks!
-if ( !function_exists( 'bp_is_active' ) ) return;
+// Do everything, but not in the admin area thanks buddy
+function tanc_bphelper_do() {
+	if ( is_super_admin() && !is_admin() ) {
+		add_action( 'admin_bar_menu', 'tanc_bphelper_add' );
+		add_action( 'admin_bar_menu', 'tanc_bphelper_info' );
+	}	
+}
+add_action('bp_init', 'tanc_bphelper_do', 1);
 
 
 function tanc_bphelper_add( $admin_bar ) {
@@ -28,16 +35,6 @@ function tanc_bphelper_add( $admin_bar ) {
 	    ),
 	) );	
 }
-
-
-// Do everything, but not in the admin area thanks buddy
-function tanc_bphelper_do() {
-	if ( is_super_admin() && !is_admin() ) {
-		add_action( 'admin_bar_menu', 'tanc_bphelper_add' );
-		add_action( 'admin_bar_menu', 'tanc_bphelper_info' );
-	}	
-}
-add_action('init', 'tanc_bphelper_do', 1);
 
 
 function tanc_bphelper_info($admin_bar) {
