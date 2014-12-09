@@ -1,4 +1,4 @@
-=== Tanc BuddyPress Helper ===
+=== Wider BuddyPress Helper ===
 Contributors: Jonnyauk
 Tags: buddypress
 Requires at least: 3.5
@@ -19,11 +19,11 @@ Uses:
 
 == Installation ==
 
-The easiest way to install this plugin is through the admin area of your WordPress site. Simply search for 'Tanc BuddyPress Helper' and install straight from there. Otherwise follow the simple steps below:
+The easiest way to install this plugin is through the admin area of your WordPress site. Simply search for 'Wider BuddyPress Helper' and install straight from there. Otherwise follow the simple steps below:
 
 1. Download the zip file by clicking the link above.
 2. Unzip the file on your computer.
-1. Upload the whole folder `tanc-buddypress-helper` to the `/wp-content/plugins/` directory.
+1. Upload the whole folder `wider-buddypress-helper` to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Visit your site and enjoy!
 
